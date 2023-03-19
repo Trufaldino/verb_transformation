@@ -17,3 +17,18 @@
       </form>
     </div>
   </body>
+
+{% comment %} 
+  {% block content %}
+  <h1>Change Verb Tense</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <label for="tense_choice">Choose a tense to change to:</label>
+    <select name="tense_choice" id="tense_choice">
+      <option value="past">Past</option>
+      <option value="future">Future</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %} {% endcomment %}

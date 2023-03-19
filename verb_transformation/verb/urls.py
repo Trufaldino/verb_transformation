@@ -1,7 +1,7 @@
 from django.urls import path
 
-from .views import index
+from .views import verb_tense_view
 
 urlpatterns = [
-    path('', index),
+    path('', verb_tense_view),
 ]
